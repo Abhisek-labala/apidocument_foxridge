@@ -177,18 +177,13 @@ const apiData = [
     "client_transaction_id":"FTC2H12752598311"
 }'`,
     returnExample: `{
-  "code": "00",
-  "data": {
-    "merchantCode": "JBHA4G",
-    "orderId": "2505121226ykpl06",
-    "merchantOrderId": "FX20250512175626",
-    "applyAmount": "500",
-    "realAmount": "0",
-    "merchantFee": "0",
-    "createdAt": "2025-05-12T12:26:26.000Z",
-    "updatedAt": "2025-05-12T12:26:27.000Z",
-    "deposite_status_label": "Pending"
-  }
+    "status": "Completed",
+    "orderId": "FX202505201614440",
+    "createdAt": "2025-05-20 10:44:50",
+    "updatedAt": "2025-05-20 16:15:13",
+    "realAmount": "500.00",
+    "applyAmount": "500.00",
+    "merchantOrderId": "GVI893498140698"
 }`
   },
   {
@@ -208,20 +203,13 @@ const apiData = [
     "client_transaction_id":"GT101722057077"
 }'`,
     returnExample: `{
-  "status": "success",
-  "data": {
-    "success": true,
-    "order_id": "FWTWTSGE-1746877015",
-    "status": "pending",
-    "transaction_ref_no": null,
-    "transaction_id": "FX20250510170655",
-    "amount": "1000.00",
-    "cust_name": "Abhisek",
-    "cust_email": "dskvub@Bkhdj.com",
-    "cust_phone": "78979798987",
-    "channel": "UPI",
-    "account_details": "798746597987@ybl"
-  }
+    "orderId": "FX20250521134838",
+    "merchantOrderId": "GT101722057077",
+    "status": "Pending",
+    "applyAmount": "1000.00",
+    "remittanceAmount": "1000.00",
+    "createdAt": "2025-05-21 13:48:38",
+    "updatedAt": "2025-05-21 13:54:38"
 }`
   }
 ];
