@@ -6,20 +6,20 @@ function StatusCodes() {
   
   // Data arrays
   const depositStatuses = [
-    { value: 1, type: 'int', status: 'Pending', description: 'The order is still waiting for user deposit' },
-    { value: 2, type: 'int', status: 'Completed', description: 'User deposit successful, and the deposit amount matches' },
-    { value: 3, type: 'int', status: 'Amount Error', description: 'User deposit successful, but the deposit amount does not match, pending processing' },
-    { value: 4, type: 'int', status: 'Transaction Failed', description: 'Order rejected or cancelled' },
-    { value: 5, type: 'int', status: 'Expected Failure', description: 'Pending payment status for more than 1 day' },
-    { value: 6, type: 'int', status: 'Completed (Amount Error)', description: 'User deposit successful, but the deposit amount does not match' }
+    { value: 1, type: 'string', status: 'Pending', description: 'The order is still waiting for user deposit' },
+    { value: 2, type: 'string', status: 'Completed', description: 'User deposit successful, and the deposit amount matches' },
+    { value: 3, type: 'string', status: 'Amount Error', description: 'User deposit successful, but the deposit amount does not match, pending processing' },
+    { value: 4, type: 'string', status: 'Transaction Failed', description: 'Order rejected or cancelled' },
+    { value: 5, type: 'string', status: 'Expected Failure', description: 'Pending payment status for more than 1 day' },
+    { value: 6, type: 'string', status: 'Completed (Amount Error)', description: 'User deposit successful, but the deposit amount does not match' }
   ];
   
   const withdrawStatuses = [
-    { value: 1, type: 'int', status: 'Pending' },
-    { value: 2, type: 'int', status: 'Processing' },
-    { value: 3, type: 'int', status: 'Completed' },
-    { value: 4, type: 'int', status: 'Payment Failure' },
-    { value: 5, type: 'int', status: 'Reverse' }
+    { value: 1, type: 'string', status: 'Pending' },
+    { value: 2, type: 'string', status: 'Processing' },
+    { value: 3, type: 'string', status: 'Completed' },
+    { value: 4, type: 'string', status: 'Payment Failure' },
+    { value: 5, type: 'string', status: 'Reverse' }
   ];
   
  const bankCodes = [
@@ -208,9 +208,9 @@ function StatusCodes() {
             <table className="min-w-full bg-gray-700 rounded-lg overflow-hidden">
               <thead className="bg-gray-600">
                 <tr>
-                  <th className="py-2 px-4 border-b border-gray-600 text-left text-gray-200">Value</th>
-                  <th className="py-2 px-4 border-b border-gray-600 text-left text-gray-200">Type</th>
+                  <th className="py-2 px-4 border-b border-gray-600 text-left text-gray-200">Sl No.</th>
                   <th className="py-2 px-4 border-b border-gray-600 text-left text-gray-200">Status Correlation</th>
+                  <th className="py-2 px-4 border-b border-gray-600 text-left text-gray-200">Type</th>
                   <th className="py-2 px-4 border-b border-gray-600 text-left text-gray-200">Description</th>
                 </tr>
               </thead>
@@ -218,8 +218,8 @@ function StatusCodes() {
                 {depositStatuses.map((status, index) => (
                   <tr key={index} className={index % 2 === 0 ? 'bg-gray-700' : 'bg-gray-750'}>
                     <td className="py-2 px-4 border-b border-gray-600 text-gray-200">{status.value}</td>
-                    <td className="py-2 px-4 border-b border-gray-600 text-gray-200">{status.type}</td>
                     <td className="py-2 px-4 border-b border-gray-600 text-gray-200">{status.status}</td>
+                    <td className="py-2 px-4 border-b border-gray-600 text-gray-200">{status.type}</td>
                     <td className="py-2 px-4 border-b border-gray-600 text-gray-200">{status.description}</td>
                   </tr>
                 ))}
@@ -235,17 +235,17 @@ function StatusCodes() {
             <table className="min-w-full bg-gray-700 rounded-lg overflow-hidden">
               <thead className="bg-gray-600">
                 <tr>
-                  <th className="py-2 px-4 border-b border-gray-600 text-left text-gray-200">Value</th>
-                  <th className="py-2 px-4 border-b border-gray-600 text-left text-gray-200">Type</th>
+                  <th className="py-2 px-4 border-b border-gray-600 text-left text-gray-200">Sl No.</th>
                   <th className="py-2 px-4 border-b border-gray-600 text-left text-gray-200">Status Correlation</th>
+                  <th className="py-2 px-4 border-b border-gray-600 text-left text-gray-200">Type</th>
                 </tr>
               </thead>
               <tbody>
                 {withdrawStatuses.map((status, index) => (
                   <tr key={index} className={index % 2 === 0 ? 'bg-gray-700' : 'bg-gray-750'}>
                     <td className="py-2 px-4 border-b border-gray-600 text-gray-200">{status.value}</td>
-                    <td className="py-2 px-4 border-b border-gray-600 text-gray-200">{status.type}</td>
                     <td className="py-2 px-4 border-b border-gray-600 text-gray-200">{status.status}</td>
+                    <td className="py-2 px-4 border-b border-gray-600 text-gray-200">{status.type}</td>
                   </tr>
                 ))}
               </tbody>
