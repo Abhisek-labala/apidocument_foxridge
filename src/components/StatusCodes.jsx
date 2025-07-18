@@ -285,7 +285,7 @@ function StatusCodes() {
             {filteredBanks.length === 0 && (
               <p className="mt-4 text-gray-300">No banks found matching your search.</p>
             )}
-            <p className="mt-2 text-sm text-gray-400">Note: This is a partial list of banks. Use search to find specific banks.</p>
+            <p className="mt-2 text-sm text-gray-400">Note: This is the list of banks. Use search to find specific banks.</p>
           </div>
         )}
       </div>
