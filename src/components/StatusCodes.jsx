@@ -75,7 +75,6 @@ function StatusCodes() {
   { name: 'Federal Bank', code: 'IN0050' },
   { name: 'FINCARE SMALL FINANCE BANK', code: 'IN0051' },
   { name: 'Fino Payment Bank', code: 'IN0052' },
-  { name: 'GAME UPI', code: 'IN0053' },
   { name: 'Gopinath Patil Parsik Janata Sahakari Bank Ltd', code: 'IN0054' },
   { name: 'HDFC Bank', code: 'IN0055' },
   { name: 'Himachal Pradesh Gramin Bank', code: 'IN0056' },
