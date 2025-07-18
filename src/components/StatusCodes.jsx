@@ -161,7 +161,8 @@ function StatusCodes() {
   { name: 'Vananchal Gramin Bank', code: 'IN0136' },
   { name: 'Vidharbha Konkan Gramin Bank', code: 'IN0137' },
   { name: 'Vijaya Bank', code: 'IN0138' },
-  { name: 'Yes Bank', code: 'IN0139' }
+  { name: 'Yes Bank', code: 'IN0139' },
+  { name: 'OTHERS', code:"If you can't find the corresponding bank name, please select OTHERS"}
 ];
 
 
