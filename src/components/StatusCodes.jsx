@@ -8,10 +8,10 @@ function StatusCodes() {
   const depositStatuses = [
     { value: 1, type: 'string', status: 'Pending', description: 'The order is still waiting for user deposit' },
     { value: 2, type: 'string', status: 'Completed', description: 'User deposit successful, and the deposit amount matches' },
-    { value: 3, type: 'string', status: 'Amount Error', description: 'User deposit successful, but the deposit amount does not match, pending processing' },
+    // { value: 3, type: 'string', status: 'Amount Error', description: 'User deposit successful, but the deposit amount does not match, pending processing' },
     { value: 4, type: 'string', status: 'Transaction Failed', description: 'Order rejected or cancelled' },
     { value: 5, type: 'string', status: 'Expected Failure', description: 'Pending payment status for more than 1 day' },
-    { value: 6, type: 'string', status: 'Completed (Amount Error)', description: 'User deposit successful, but the deposit amount does not match' }
+    // { value: 6, type: 'string', status: 'Completed (Amount Error)', description: 'User deposit successful, but the deposit amount does not match' }
   ];
   
   const withdrawStatuses = [
@@ -19,7 +19,7 @@ function StatusCodes() {
     { value: 2, type: 'string', status: 'Processing' },
     { value: 3, type: 'string', status: 'Completed' },
     { value: 4, type: 'string', status: 'Payment Failure' },
-    { value: 5, type: 'string', status: 'Reverse' }
+    // { value: 5, type: 'string', status: 'Reverse' }
   ];
   
  const bankCodes = [
